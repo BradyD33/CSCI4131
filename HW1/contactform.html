@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="styling.css">
   </head>
   <body>
-    <ul>
-      <li><a href="/">Main Page</a></li>
-      <li><a href="/testimonies">Testimonies</a></li>
-      <li><a href="/contact">Contact Us</a></li>
-    </ul>
+    <div>
+      <ul>
+        <li><a href="/">Main Page</a></li>
+        <li><a href="/testimonies">Testimonies</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
     <h1>Contact Us!</h1>
     <form action="/contact" method="get">
         <label for="name">Name</label>
@@ -33,7 +35,7 @@
         <label for="call">Call Me</label>
         <input type="checkbox" id="call" name="call-me" value="call">
         <br>
-        <label for="email">Email Me</label>
+        <label for="emailUser">Email Me</label>
         <input type="checkbox" id="emailUser" name="email-me" value="emailUser">
         <br>
         <label for="letter">Send a letter</label>
@@ -42,8 +44,6 @@
         <label for="submit">Submit</label>
         <input type="submit" id="submit" name="submit-me" >
         <br>
-
-        
     </form>
   </body>
 </html>

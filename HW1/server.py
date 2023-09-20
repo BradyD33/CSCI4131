@@ -15,11 +15,20 @@ def server(url):
     ######
     # TODO: Hey student! This is the function you need to change! Don't miss it!
     ######
-    if(url.endswith("/") or url.endswith("/main")):
+  
+        
+    newUrl=url
+    if(url.count("?")>0):
+        newUrl = url.rsplit("?")
+        newUrl=newUrl[0]   
+    if(url.count("#")>0):
+        newUrl = url.rsplit("#")
+        newUrl=newUrl[0]    
+    if(newUrl.endswith("/") or newUrl.endswith("/main")):
         ourFile="mainpage.html"
-    elif(url.endswith("/testimonies")):
+    elif(newUrl.endswith("/testimonies")):
         ourFile="testimonials.html"
-    elif(url.endswith("/contact")):
+    elif(newUrl.endswith("/contact")):
         ourFile="contactform.html"
     else:
         ourFile="404.html"
