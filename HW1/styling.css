@@ -10,12 +10,12 @@
 .border{
     border: 0;
 }
+.review{
+    font-size: 26px;
+}
 .review-body{
     font-style: italic;
 }
 .review-name{
     font-weight: bold;
-}
-.review{
-    font-size: 26px;
 }

@@ -24,11 +24,19 @@ def server(url):
     if(url.count("#")>0):
         newUrl = url.rsplit("#")
         newUrl=newUrl[0]    
+<<<<<<< HEAD
     if(newUrl.endswith("/") or newUrl==("/main")):
         ourFile="mainpage.html"
     elif(newUrl==("/testimonies")):
         ourFile="testimonials.html"
     elif(newUrl==("/contact")):
+=======
+    if(newUrl.endswith("/") or newUrl.endswith("/main")):
+        ourFile="mainpage.html"
+    elif(newUrl.endswith("/testimonies")):
+        ourFile="testimonials.html"
+    elif(newUrl.endswith("/contact")):
+>>>>>>> 9c62016eb1063736ba6d192177688ba6f7cb27e0
         ourFile="contactform.html"
     else:
         ourFile="404.html"
