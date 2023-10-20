@@ -1,0 +1,18 @@
+*{
+    background: red;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width:200px;
+    background-color: #00008b;
+    justify-self: right;
+    
+}
+
+div{
+    display:flex;
+    justify-content: center;
+    background-color: aqua;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Right-angle Triangle Calculator</title>
+    <script>
+      function clickEventHandler() {
+        let a = document.getElementById("aInput").value; // 1
+        let b = document.getElementById("bInput").value;// 2
+        a = parseFloat(a);
+        b = parseFloat(b);
+        c = Math.sqrt(a * a + b * b);
+        // 3: add code to display the c value!
+        document.getElementById("result").innerText = c;
+      }
+
+      function initialize() {
+        // 4: set the onclick event of the "Calculate"
+        // button to call the function clickEventHandler
+        let subButton = document.getElementById("btn");
+        subButton.addEventListener("click", clickEventHandler);
+      }
+
+      window.addEventListener("load", initialize);
+    </script>
+  </head>
+  <body>
+    <div class="all">
+      <div class="row">
+        <div id="A-div" class="input-div">
+          <label for="aInput">A = </label>
+          <input type="number" min="0" id="aInput" class="triInput" />
+        </div>
+        <div id="B-div" class="input-div">
+          <label for="bInput">B = </label>
+          <input type="number" min="0" id="bInput" class="triInput" />
+        </div>
+      </div>
+      <div class="row"><button id="btn">Calculate</button></div>
+      <div class="row">C = <span id="result">???</span></div>
+    </div>
+  </body>
+</html>

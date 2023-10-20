@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>boxes!</title>
+  
+  <style>
+    div.card {
+      /* Some freebies to get you started */
+      border-radius: 3em;
+      /* this is how you do corners */
+      box-shadow: 0 0 0.5em;
+      /* a small shadow does amazing work visually*/
+      
+      background-color: beige;
+      display: flex;
+      flex-direction: column;
+      height: 25em;
+      width: 20em;
+      overflow: clip;
+      
+
+      /* A few hints */
+
+      /* the elements have no border */
+
+      /* The elements have a total of around 4em space between them
+        
+        /* The boxes are size 25em by 20em*/
+
+      /* You'll need a width, and height */
+
+      /* You'll need to set the overflow property to make the borders matter */
+
+      /* The color used is "beige".*/
+
+      /* And you'll need to style more than just the div... */
+
+      /* The image should not have a "height" property. */
+
+      /* The font for the header is " 'Courier New', Courier, monospace ", it is also italic and bold, and only 1.5 times bigger than normal text.
+
+        /* The links are bold */
+
+      /*Be careful of your selectors here -- nothing outside of the cards should be effected! */
+    }
+
+    div img {
+      object-fit: contain;
+    }
+
+    body {
+
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      align-content: space-between;
+      padding: 2em;
+      gap:4em;
+
+    }
+
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    nav>a {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img
+      src="https://campusmaps.umn.edu/sites/campusmaps.umn.edu/files/styles/folwell_full/public/2022-01/kellerhall_150626_4282.jpg?itok=vhRy898F">
+    <h1> Keller Hall </h1>
+    <nav>
+      <a href="https://campusmaps.umn.edu/kenneth-h-keller-hall">More info</a>
+    </nav>
+    <p>This is where a lot of Professors work. Kluver has a secret office in this building!</p>
+  </div>
+  <div class="card">
+    <img
+      src="https://campusmaps.umn.edu/sites/campusmaps.umn.edu/files/styles/folwell_full/public/2022-05/shepherd_laboratories.jpg?itok=025fnI4o">
+    <h1> Shepherd Laboratories</h1>
+    <nav>
+      <a href="https://campusmaps.umn.edu/shepherd-laboratories">More info</a>
+    </nav>
+    <p>This is where a lot of Instructors (used to) work. The top floors are due for a renovation</p>
+  </div>
+</body>
+
+</html>

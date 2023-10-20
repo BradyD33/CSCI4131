@@ -1,0 +1,31 @@
+/*
+
+
+*/
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>TITLE</title>
+    <script async defer>
+        let timer= document.getElementById("timer");
+        let count=120;
+        timer.setInterval(() => {
+            while(count<=0){
+                document.writeln(count)
+                count-=1;
+            }
+        }, (1000));
+    </script>
+  </head>
+  <body>
+    <div id="timer">
+        <button id="timer-button">
+            Start timer
+        </button>
+
+    </div>
+  </body>
+  
+</html>
+//dummyList=[["user-name=Baka", "user-email=sus@baka.com","date-selection=2023-10-31","help-option=Unsubscribe", "call-me=letter", "submit-me=Submit"]]

@@ -1,0 +1,12 @@
+
+div.card{
+    display: flex;
+    flex-direction: column;
+    height: 25em;
+    width: 20em;
+    overflow:clip;
+    align-content: center;
+    
+    
+}
+

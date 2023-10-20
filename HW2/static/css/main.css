@@ -1,0 +1,181 @@
+*{
+    background-color: rgb(52,27,58)
+}
+/* *{
+    background-color: rgb(61, 0, 77)
+} */
+body{
+    margin: 0;
+
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:5em;
+    align-items: center;
+    background-color: rgb(4, 4, 50);
+}
+.navBar a{
+    background-color: darkmagenta;
+    height:3em;
+    width:12em;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+#main-header{
+    font-family: 'Pacifico', serif;
+    font-size: 7em;
+    
+}
+.title-picture h2{
+    font-size: 2em;
+}
+.title-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image{
+    width:75%;
+    max-height:30%;
+
+}
+.bold li{
+    color:magenta;
+    background-color: black;
+
+}
+.italic{
+    color:blue;
+    background-color: black;
+}
+.main-text-box{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+    width: 50%;
+    border-style: solid;
+    border-radius: 1em;
+    margin-left: 25%;
+}
+.main-text-box>*{
+    background-color: black;
+}
+ol li{
+    background-color: black;
+}
+div>div{
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    width:50em;
+    height:30em;
+  
+    
+    margin: 2em;
+    
+    
+}
+#video-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 50em;
+    text-align: center;
+    margin:auto;
+
+    
+}
+#vibeHere{
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+.reviewDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5em;
+}
+.review{
+    
+    width: 40%;
+    border-style: solid;
+    border-color: black;
+    border-width: .1em ;
+    border-radius: 1.5em;
+    padding: .5em;
+    margin: 1em;
+    
+
+    
+}
+
+.review-body{
+    text-align: left;
+    margin-top: 0;
+    margin-left: 0;
+}
+.review-name{
+   
+    
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.contactH{
+    font-size: 4em;
+    text-align: center;
+}
+#contact-form{
+    text-align: center;
+    margin:auto;
+    width: 25%;
+    height:20em;
+    padding: 1em;
+    border-style: solid;
+    border-color: black;
+    border-width: .1em ;
+    border-radius: 1.5em;
+    background-color: rgb(4, 4, 50);
+    color:white;
+    
+    
+}
+#contact-form *{
+    background-color: rgb(4, 4, 50);
+    color:white;
+}
+
+table{
+    
+    font-size: 1.5em;
+    border-collapse: collapse;
+    width: 75%;
+    margin:auto;
+    margin-top: 3em;
+}
+
+table, th, td{
+    border:.2em solid;
+}
+
+#logHeader{
+    font-size: 3em;
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: gray;
+}
+
+

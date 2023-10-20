@@ -14,21 +14,20 @@
     <h1>Contact Us!</h1>
     <form action="/contact" method="get">
         <label for="name">Name</label>
-        <input type="text" id="name" name="user-name">
+        <input type="text" id="name" name="user-name" required>
         <br>
         <label for="email">Email</label>
-        <input type="email" placeholder="you@gmail.com" id="email" name="user-email">
+        <input type="email" placeholder="you@gmail.com" id="email" name="user-email" required>
         <br>
         <label for="date">Select Date</label>
         <input type="date" id="date" name="date-selection">
         <br>
         <label for="help">Choose help option</label>
-        <input list="helper" id="help" name="help-options">
-        <datalist id="helper">
-            <option value="Change Phone Number"></option>
-            <option value="Unsubscribe"></option>
-            <option value="Change location"></option>
-        </datalist>
+        <select id="helper">
+            <option value="Change Phone Number">Change Phone Number</option>
+            <option value="Unsubscribe">Unsubscribe</option>
+            <option value="Change location">Change location</option>
+        </select>
         <br>
         <label for="call">Call Me</label>
         <input type="checkbox" id="call" name="call-me" value="call">

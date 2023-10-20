@@ -1,0 +1,20 @@
+
+h1{
+    color:red;
+}
+body span{
+    color:blue;
+}
+p{
+    color:black;
+
+}
+
+p span{
+    color:green;
+}
+
+em{
+    text-decoration: underline;
+    font-weight: none;
+}

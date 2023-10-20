@@ -1,3 +1,0 @@
-http basics: request and response
-To get a file from a server we use a get request
-This causes the server to send a response containing the file

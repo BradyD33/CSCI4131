@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="navBar">
+
+    <a href="/">Main Page</a>
+    <a href="/testimonies">Testimonies</a>
+    <a href="/contact">Contact Us</a>
+  </div>
+  <h1 class="contactH">Contact Us!</h1>
+  <form action="/contact" method="get" id="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="user-name" required>
+    <br>
+    <label for="email">Email</label>
+    <input type="email" placeholder="you@gmail.com" id="email" name="user-email" required>
+    <br>
+    <label for="date">Select Date</label>
+    <input type="date" id="date" name="date-selection">
+    <br>
+    <label for="helper">Choose help option</label>
+    <select id="helper" name="help-option">
+      <option value="Change Phone Number">Change Phone Number</option>
+      <option value="Unsubscribe">Unsubscribe</option>
+      <option value="Change location">Change location</option>
+    </select>
+    <br>
+    <p>Please check acceptable methods of communication.</p>
+    <label for="call">Call Me</label>
+    <input type="checkbox" id="call" name="call-me" value="Call">
+    <br>
+    <label for="email">Email Me</label>
+    <input type="checkbox" id="emailUser" name="email-me" value="Email">
+    <br>
+    <label for="letter">Send a letter</label>
+    <input type="checkbox" id="letter" name="letter-me" value="Letter">
+    <br>
+    <label for="submit">Submit</label>
+    <input type="submit" id="submit" name="submit-me" onclick="window.location.href='/contact';">
+    <br>
+  </form>
+</body>
+
+</html>
